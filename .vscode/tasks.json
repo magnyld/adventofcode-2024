@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "./gradlew",
+      "args": ["build", "-x", "test"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "silent",         // Keep the terminal visible
+        "panel": "shared",          // Use a shared terminal panel
+        "focus": false              // Prevent the terminal from gaining focus
+      },
+      "problemMatcher": ["$gradle"],
+      "detail": "Build the Kotlin application using Gradle"
+    }
+  ]
+}
