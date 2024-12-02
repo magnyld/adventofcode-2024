@@ -26,17 +26,8 @@ fun checkLevel(level: List<Int>): Boolean {
             return@forEachIndexed
         }
 
-        if (safeInc && checkInc(index, level) ) {
-            safeInc = true
-        } else {
-            safeInc = false
-        }
-
-        if (safeDec && checkDec(index, level) ) {
-            safeDec = true
-        } else {
-            safeDec = false
-        }
+        safeInc = safeInc && checkInc(index, level)
+        safeDec = safeDec && checkDec(index, level)
     }
 
     if (safeInc || safeDec) {
