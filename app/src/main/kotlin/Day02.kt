@@ -1,7 +1,3 @@
-import kotlin.math.abs
-import java.util.Collections
-
-
 fun checkInc(index: Int, level: List<Int>): Boolean {
     if (level[index] < level[index + 1] && (level[index + 1] - level[index] <= 3)) {
         return true;
