@@ -8,5 +8,5 @@ class App {
 */
 
 fun main() {
-    day03()
+    day04()
 }
